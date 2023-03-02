@@ -1,0 +1,190 @@
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+body {
+    background-color: rgb(200,200,200);
+}
+.phone {
+    position: sticky;
+    width: 340px;
+    height: 694px;
+    background-color: black;
+    border-radius: 60px;
+    border: solid 1px gray;
+    margin: auto;
+    z-index: 0;
+}
+.phone-screen {
+    position: sticky;
+    margin: 10px auto;
+    width: 320px;
+    height: 674px;
+    border: solid 1px rgba(80, 80, 80, .5);
+    border-radius: 50px;
+    z-index: -2;
+    overflow: hidden;
+
+
+}
+
+.notch {
+    position: absolute;
+    display: block;
+    left: 25%;
+    margin: 10px auto;
+    width: 50%;
+    height: 30px;
+    border: solid 1px rgba(80, 80, 80, .5);
+    border-radius: 0 0 20px 20px;
+    border-top: black solid 1px;
+    background-color: black;
+    z-index: 1;
+}
+
+.camera{
+    width: 15px;
+    height: 15px;
+    background-color: rgba(80, 80, 80, .5);
+    border-radius: 50px;
+    margin: 4px 0px 0px 12px;
+    overflow: hidden;
+
+}
+
+.lens {
+    width: 10px;
+    height:10px;
+    background-color: #256D86;
+    display: inline-block;
+    margin: 2.5px 2.8px;
+    border-radius: 50px;
+}
+form {
+    position: relative;
+    background-color: rgb(10,10,10);
+    align-content: center;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    align-items: center;
+    margin: auto;
+    z-index: -1;
+    border-radius: 49px;
+    
+}
+
+.bar{
+    position: absolute;
+    bottom: 15px;
+    left: 107px;
+    width: 106px;
+    height: 4px;
+    border-radius: 20px;
+    background-color: white;
+
+}
+::placeholder {
+    color: white;
+    opacity: 1;
+}
+button {
+    border: none;
+}
+
+.items {
+    top: 20%;
+    position: absolute;
+    display: grid;
+    grid-template-columns: repeat(4, 75px);
+    grid-template-rows: 100px repeat(5, 75px);
+    width: 300px;
+    height: 475px;
+}
+
+#scrn {
+    grid-row: 1;
+    grid-column: span 4;
+    width: 300px;
+    height: 100px;
+    font-size: 70px;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: right;
+    background-color: rgb(10,10,10);
+    border: none;
+    color: white;
+    padding-right: 20px;
+    outline:none;
+
+}
+
+.function {
+    width: 225px; 
+    height: 75px;
+    grid-template-columns: repeat(3, 75px);
+    grid-column: span 3;
+    grid-row: 2; 
+    margin: 0px auto;
+}
+#clr {
+    font-size: 30px;
+    color: rgb(28, 28, 28);
+    background-color: rgb(212, 212, 210);
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+.operators {
+    display: grid;
+    grid-column-start: 4;
+    width: 70px;
+    height: 375px;
+    grid-row: 2 / 4;
+    margin: 0;
+    row-gap: 5px;
+    padding-left: 5px;
+
+}
+
+.operator {
+    margin: 0px auto;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #FF9500;
+    color: white;
+    font-size: 35px;
+}
+.nbtns {
+    grid-column-start: 1;
+    grid-row-start: 3;
+    grid-column: span 3;
+    display: grid;
+    width: 225px;
+    height: 300px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+    margin: auto;
+
+}
+.nbtn{
+    font-size: 35px;
+    color: white;
+    background-color: rgba(28, 28, 28, 1);
+    border: none;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+#zero {
+    width: 145px;
+    grid-column: span 2;
+    grid-row: 4;
+    border-radius: 30px;
+    text-align: left;
+    padding-left: 30px;
+}
+
